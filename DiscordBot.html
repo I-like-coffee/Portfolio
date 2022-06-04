@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jun Xiang's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Back to Main Page</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="DiscordBot.html" class="active">Discord Bot Page</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Discord Community Bot</h1>
+						<p>
+							<div class="image left"><img src="images/DiscordBot01.jpg" height="500" width="400" /></div>
+							<div>
+								<h2>About the Game</h2>
+								- 05.2022 - present<br>
+								- Individual Project<br>
+								- Written in <b>Python</b><br>
+							</div>
+							<br>
+							<div>
+								<b><em>Inspiration</em></b><br>
+								Being part of multiple servers, for multiple years now, I have always been fascinated by the Discord Bots employed by Server Owners and
+								their functionalities. Being a <u>naturally curious programmer</u>, packaged with the addition of new Discord features and challenge from friends, 
+								I decided to create and host my own <em><b>Discord Community Bot</b></em>.
+								<br>
+							</div>
+							<br>
+							<div>
+								<b><em>Functionalities</em></b><br>
+								- Connected to the <b><a href="https://twitch.tv/" target="_blank">Twitch</a></b> API, A Video Streaming Platform<br>
+								- Connected to the <a href="https://tenor.com" target="_blank">Tenor</a> API, A Gif Hosting Site<br>
+								- Ability to facilitate <u><em>Moderation</em></u><br>
+								- Server-Specific Settings<br>
+							<br>
+							<div>
+								<b><em>Challenges Faced</em></b><br>
+								<ol>
+									<li>
+										<b>Challenge:</b>
+										Server-Specific Settings
+										<br>
+										<b>Solution:</b><br>
+										<u><em>Adding Server Settings Support:</em></u><br>
+										As unlike most scripts I have previously worked with, there is no new thread for each server the Bot joins, 
+										hence the only logical solution is to turn toward .json files to store data. I then added a watch for when the Bot joins a new server, 
+										the .json file is opened and the server ID is then dopisited into the .json file with the default settings.
+										<br>
+										<u><em>Utilizing Settings:</em></u><br>
+										When a feature supporting Server-Specific settings is called, I then redirect the call to a custom-wirrten function
+										that reads the .json file for the setting value. For example, Commands Prefixes. I redirected the "Prefix Request"
+										operation when a command is called to a function which calls for the Server-Specific prefix, and returns that value.
+									</li>
+								</ol>
+							</div>
+						</p>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="http://html5up.net/license">&copy; Published under Creative Commons.</a></li>
+						<li>All rights reserved</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

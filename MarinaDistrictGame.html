@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jun Xiang's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Back to Main Page</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="MarinaDistrictGame.html" class="active">Marina District Game</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">[SG] Marina District, Singapore Game</h1>
+						<p>
+							<div class="image left"><img src="images/SGb.jpg" height="500" width="400" /></div>
+							<div>
+								<h2>About the Game</h2>
+								- 07.2021 - present<br>
+								- Commission<br>
+								- Senior Developer<br>
+								- Written in <b>Lua</b><br>
+								- <u><a href="https://www.roblox.com/games/6853745217/SG-Marina-District-Singapore" target="_blank">Game Link</a></u>
+							</div>
+							<br>
+							<div>
+								<b><em>Attributions</em></b><br>
+								- ~90% of the scripts<br>
+								- Job System<br>
+								- Client x Server (UI Functionalities)<br>
+							</div>
+							<br>
+							<div>
+								<b><em>Technologies I Implemented</em></b><br>
+								- Object Orientated Programming<br>
+								- Datastores<br>
+								<br>
+							</div>
+							<br>
+							<div>
+								<b><em>Challenges Faced</em></b><br>
+								<ol>
+									<li>
+										<b>Challenge:</b>
+										Non-Playable-Character [NPC] Behaviour
+										<br>
+										<b>Solution:</b><br>
+										<u><em>Movement:</em></u><br>
+										For each job that requires NPCs, I placed nodes forming a rough path to assist in moving the NPCs.
+										NPCs are spawned at the very first nodes' position, and with the help of the built-in "PathFinding" Service,
+										multiple closer nodes are calculated between each "manual node" as the NPCs traverse to the next "manual node"
+										through moving to each "calculated node".
+										<br>
+										<u><em>Humanization:</em></u><br>
+										To give NPCs a more human touch, I implemented <u>Speed</u>, <u>Patience</u> and <u>Willingness-to-Tip</u> factors.<br>
+										The <u>Speed</u> factor determines the speed at which the NPC moves at. The <u>Patience</u> factor determines the
+										maximum time a NPC is willing to wait at the cashier for their order before just skipping to "Leaving Shop" phase and leave
+										the shop. The <u>Willingness-to-Tip</u> factor determines the money at which clients would be awarded for serving the
+										NPC customer.
+									</li>
+								</ol>
+							</div>
+						</p>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="http://html5up.net/license">&copy; Published under Creative Commons.</a></li>
+						<li>All rights reserved</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
