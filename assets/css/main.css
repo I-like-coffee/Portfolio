@@ -24,9 +24,6 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-	.embed-responsive.embed-responsive-16by9 iframe {
-		clip-path: inset(1px 1px);
-	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
