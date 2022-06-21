@@ -223,27 +223,27 @@
 							</p>
 							<div class="split style1">
 								<section>
-									<form action="assets/php/email.php" method="POST" target="_blank" enctype="text/plain">
+									<form action="https://getform.io/f/2f209623-4b1d-4202-9284-5aa3b90d9b5d" method="POST">
 										<div class="fields">
 											<div class="field">
-												<label for="subject">Subject</label>
-												<input class="input" type="text" name="subject" id="subject" />
-											</div>
-											<div class="field half">
 												<label for="email">Email</label>
-												<input class="input" type="text" name="email" id="email" />
+												<input type="text" name="email" required/>
 											</div>
 											<div class="field half">
 												<label for="name">Name</label>
-												<input class="input" type="text" name="name" id="name" />
+												<input type="text" name="name" required/>
+											</div>
+											<div class="field half">
+												<label for="subject">Subject</label>
+												<input type="text" name="subject" required/>
 											</div>
 											<div class="field">
 												<label for="body">Message</label>
-												<textarea class="textarea" name="body" id="body" rows="5"></textarea>
+												<textarea name="body" rows="5" required></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="submit" class="button is-primary"></li>
+											<li><input type="submit" value="submit"  class="button is-primary"></li>
 										</ul>
 									</form>
 								</section>
