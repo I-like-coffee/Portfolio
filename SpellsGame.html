@@ -115,7 +115,7 @@
 										the Vector3 position, X<sub>2</sub>, of the intersection between X<sub>1</sub>'s LookVector and a sphere with radius range, in this case 60.
 										<br>
 										<u><em>Calculating Spell Start Position:</em></u><br>
-										Now, We have X<sub>final</sub> which either rests on a sphere with radius range, in this case 60, around the client's player model.
+										Now, We have X<sub>final</sub> which either rests on or within a sphere with radius range, in this case 60, around the client's player model.
 										To calculate the spell's starting position, we first have to multiple X<sub>final</sub> with Vector3(1,0,1) to have a Vector3 with
 										only the X and Z axises and a Y axis of 0, which we will call X<sub>3</sub>. Next, we add X<sub>3</sub> with the client's player model's
 										Y value that we find by multiplying the client's player model's position by the Vector(0,1,0), call this X<sub>4</sub>.
